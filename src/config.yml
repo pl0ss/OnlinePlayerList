@@ -1,0 +1,5 @@
+api_url: https://.../server_api.php
+online_player_list: true
+short_player_join_and_leave: true
+colored_chat_name: true
+announce_failed_logins: true

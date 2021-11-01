@@ -1,0 +1,5 @@
+main: de.kev.OnlinePlayerList.main.Main
+name: OnlinePlayerList
+version: 1.1.0
+author: Kev
+api-version: 1.17
