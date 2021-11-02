@@ -9,8 +9,8 @@ Online Player List Minecraft Plugin (mein erstes Plugin)
 
 ##Config
 .../plugins/OnlinePlayerList/config.yml
-api_url muss angegeben werden
-alle Funktionen können aktiviert/deaktiviert werden
+* api_url muss angegeben werden
+* alle Funktionen können aktiviert/deaktiviert werden
 
 ##API
 Folgende Daten werden an die in der config.yml hinterlegte Adresse gesendet:
