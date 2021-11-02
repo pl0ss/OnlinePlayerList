@@ -1,18 +1,18 @@
 # OnlinePlayerList
-Online Player List Minecraft Plugin (mein erstes Plugin)
+Online Player List Minecraft Plugin (mein erstes Plugin)\
 
-##Funktionen
+## Funktionen
 * Aktuelle Playerlist, Server-Status [Online/Offline] und Uptime/Downtime seit letzten start/stop auf einer Website
 * Verkürzte join und quit Chat-Messages: +Name -Name
 * Spielername des Nachrichtensenders wird im Chat golden angezeigt, um Name und eigentliche Nachricht schneller zu unterscheiden 
 * Fehlgeschlagene Login-Versuche werden im Chat angezeigt z.B. nicht auf der Whitelist
 
-##Config
+## Config
 .../plugins/OnlinePlayerList/config.yml
 * api_url muss angegeben werden
 * alle Funktionen können aktiviert/deaktiviert werden
 
-##API
+## API
 Folgende Daten werden an die in der config.yml hinterlegte Adresse gesendet:
 * Server Start: ?event=start&version=[]&maxplayer=[]&whitelist=[true/false]
 * Server Stop: ?event=stop
@@ -21,5 +21,5 @@ Folgende Daten werden an die in der config.yml hinterlegte Adresse gesendet:
 * Fehlgeschlagener Login-Versuch: ?event=join_failed&name=[]
 
 
-##Bilder
+## Bilder
 ![chat.png]( "New im Vergleich zu Vanilla")
