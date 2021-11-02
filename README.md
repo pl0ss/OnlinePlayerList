@@ -15,7 +15,7 @@
 alle Funktionen können aktiviert/deaktiviert werden</p>
 
 <h2>API</h2>
-<p>Folgende Daten werden an die in der config.yml hinterlegte adresse gesendet:</p>
+<p>Folgende Daten werden an die in der config.yml hinterlegte Adresse gesendet:</p>
 <ul>
   <li>Server Start: ?event=start&version=[]&maxplayer=[]&whitelist=[true/false]</li>
   <li>Server Stop: ?event=stop</li>
