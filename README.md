@@ -22,4 +22,4 @@ Folgende Daten werden an die in der config.yml hinterlegte Adresse gesendet:
 
 
 ## Bilder
-![chat.png]( "New im Vergleich zu Vanilla")
+![](chat.png  "New im Vergleich zu Vanilla")
