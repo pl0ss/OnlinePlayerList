@@ -13,3 +13,13 @@
 <p>.../plugins/OnlinePlayerList/config.yml</p>
 <p>api_url muss angegeben werden <br>
 alle Funktionen können aktiviert/deaktiviert werden</p>
+
+<h2>API</h2>
+<p>Folgende Daten werden an die in der config.yml hinterlegte adresse gesendet:</p>
+<ul>
+  <li>Server Start: ?event=start&version=[]&maxplayer=[]&whitelist=[true/false]</li>
+  <li>Server Stop: ?event=stop</li>
+  <li>Player Join: ?event=join&name=[]</li>
+  <li>Player Quit: ?event=quit&name=[]</li>
+  <li>Fehlgeschlagene Login-Versuche: ?event=join_failed&name=[]</li>
+</ul>
