@@ -1,5 +1,5 @@
 # OnlinePlayerList
-Online Player List Minecraft Plugin (mein erstes Plugin)\
+Online Player List Minecraft Plugin (mein erstes Plugin)
 
 ## Funktionen
 * Aktuelle Playerlist, Server-Status [Online/Offline] und Uptime/Downtime seit letzten start/stop auf einer Website
