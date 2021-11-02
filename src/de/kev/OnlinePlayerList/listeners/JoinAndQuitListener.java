@@ -21,18 +21,20 @@ public class JoinAndQuitListener implements Listener {
 	
 	@EventHandler
     public void normalLogin(PlayerLoginEvent event) throws IOException {
-		if(online_player_list_toggle){
-			if(event.getResult() == PlayerLoginEvent.Result.ALLOWED) { // wegen whitelist
-				String event_type = "join";
-				String name = event.getPlayer().getName();
-				//Bukkit.broadcastMessage(event_type + ": " + name);
+		if(event.getResult() == PlayerLoginEvent.Result.ALLOWED) { // wegen whitelist
+			String event_type = "join";
+			String name = event.getPlayer().getName();
+			//Bukkit.broadcastMessage(event_type + ": " + name);
+			if(online_player_list_toggle){
 				Request(event_type, name);
-			} else { // z.B. nicht auf der whitelist
-				String event_type = "join_failed";
-				String name = event.getPlayer().getName();
-				if(announce_failed_logins_toggle){
-					Bukkit.broadcastMessage("§6? §e" + name + " §6tried to join the game");
-				}
+			}
+		} else { // z.B. nicht auf der whitelist
+			String event_type = "join_failed";
+			String name = event.getPlayer().getName();
+			if(announce_failed_logins_toggle){
+				Bukkit.broadcastMessage("§6? §e" + name + " §6tried to join the game");
+			}
+			if(online_player_list_toggle){
 				Request(event_type, name);
 			}
 		}
@@ -40,11 +42,11 @@ public class JoinAndQuitListener implements Listener {
 	
 	@EventHandler
     public void normalLogin(PlayerQuitEvent event) throws IOException {
+		String event_type = "quit";
+		String name = event.getPlayer().getName();
+		//Bukkit.broadcastMessage(event_type + ": " + name);
 		if(online_player_list_toggle){
-			String event_type = "quit";
-    	    String name = event.getPlayer().getName();
-			//Bukkit.broadcastMessage(event_type + ": " + name);
-    	    Request(event_type, name);
+			Request(event_type, name);
 		}
     }
 	
