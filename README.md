@@ -21,5 +21,5 @@ alle Funktionen können aktiviert/deaktiviert werden</p>
   <li>Server Stop: ?event=stop</li>
   <li>Player Join: ?event=join&name=[]</li>
   <li>Player Quit: ?event=quit&name=[]</li>
-  <li>Fehlgeschlagene Login-Versuche: ?event=join_failed&name=[]</li>
+  <li>Fehlgeschlagener Login-Versuch: ?event=join_failed&name=[]</li>
 </ul>
